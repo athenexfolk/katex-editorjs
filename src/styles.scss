@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'katex/dist/katex.css';
+
+@font-face {
+  font-family: katex;
+  src: url("assets/fonts/KaTeX_Main-Regular.ttf");
+}
+
+.katex-wrapper {
+  position: relative;
+  padding: 4px;
+
+  .katex-e-display {
+    text-align: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+.inline-katex {
+  font-family: katex;
+  font-size: 1.21em;
+}
